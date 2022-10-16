@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+*/
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+
+*/
+
+
+/* li a::after{
+   content: '';
+   display: block;
+   margin: 0 auto;
+   height: 4px;
+   width: 0%;
+   background-color: #c4c4f7;
+   transition: all .5s ease-in-out;
+} */
+
+/* li a:hover::after{
+   width: 100%;
+} */
+
+
+
+@layer base{
+   body{
+      @apply  text-[15px] font-alata
+   }
+
+   li a{
+      @apply after:content-[''] after:block after:mx-auto after:mt-[.14rem] after:h-[.14rem] after:w-0 after:bg-wht after:transition-all after:ease-in-out after:duration-300  hover:after:w-full
+   }
+}
+
+@layer components{
+   .mobile-links{
+      @apply absolute top-[6.5rem]
+   }
+}
