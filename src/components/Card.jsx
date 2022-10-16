@@ -7,8 +7,8 @@ const Card = ({card}) => {
          <div className='absolute h-full w-full bg-blk/50 group-hover:bg-wht/70  transition-all ease-in-out duration-300'></div>
          <picture>
             {
-               card.srcSetMedia.map(srcset => (
-                  <source srcset={srcset.src} media={srcset.media} />
+               card.srcSetMedia.map((srcset, index) => (
+                  <source key={index} srcSet={srcset.src} media={srcset.media} />
                ))
             }
             <img src={card.imgUrl} alt={card.imgUrl.split("/").slice(-1)} />
