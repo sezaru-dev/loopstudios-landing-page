@@ -14,7 +14,7 @@ const Card = ({card}) => {
             <img src={card.imgUrl} alt={card.imgUrl.split("/").slice(-1)} />
          </picture>
       </div>
-      <p className='absolute top-[44%] lg:top-[78%] left-5 lg:left-[14%] z-10 w-[38%] lg:w-[60%] leading-6 text-[1.49rem] lg:text-3xl text-wht group-hover:text-blk group-hover:font-semibold font-josefinSans uppercase transition-all ease-in-out duration-150'>{card.title}</p>
+      <p className='absolute top-[44%] lg:top-[78%] left-5 lg:left-[14%] z-10 w-[40%] lg:w-[60%] leading-6 text-[1.49rem] lg:text-3xl text-wht group-hover:text-blk group-hover:font-semibold font-josefinSans uppercase transition-all ease-in-out duration-150'>{card.title}</p>
    </div>
   )
 }
